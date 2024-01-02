@@ -1,0 +1,62 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Virtual device configuration",
+                "description": "Enter a friendly name for the new virtual device.\nYou'll be able to add virtual entities later.",
+                "data": {
+                    "friendly_name": "Friendly name",
+                    "manufacturer": "Device manufacturer",
+                    "model": "Device model"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Entity configuration",
+                "description": "Choose an action.",
+                "menu_options": {
+                    "entity_add": "Add entities",
+                    "entity_copy": "Copy entities",
+                    "entity_edit": "Edit an entity",
+                    "entity_remove": "Remove an entity"
+                }
+            },
+            "entity_add": {
+                "title": "Add entities",
+                "description": "Choose a module to associate with the newly added entity.\nYou can also add multiple entities at once.",
+                "data": {
+                    "count": "Entities to add"
+                }
+            },
+            "entity_copy": {
+                "title": "Copy entities",
+                "description": "Choose the entity that you want to copy.\nYou can also make multiple copies at once.",
+                "data": {
+                    "count": "Entities to copy"
+                }
+            },
+            "entity_edit": {
+                "title": "Edit an entity",
+                "description": "Choose the entity that you want to edit.",
+                "data": {}
+            },
+            "entity_remove": {
+                "title": "Remove an entity",
+                "description": "Choose the entity that you want to remove.\nYou will also need to remove it using entity settings.",
+                "data": {}
+            },
+            "entity_editor": {
+                "title": "Entity editor ({entity_index} of {entity_count})",
+                "description": "You're editing entity {entity_index} of {entity_count}.\nThe chosen module is: {module}",
+                "data": {
+                    "id": "Entity ID",
+                    "friendly_name": "Friendly name",
+                    "device_class": "Device class"
+                }
+            }
+        }
+    }
+}

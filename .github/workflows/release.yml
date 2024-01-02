@@ -1,0 +1,21 @@
+name: Release
+on:
+  push:
+    tags: ["v*.*.*"]
+jobs:
+  lint-python:
+    name: Run Python lint
+    uses: kuba2k2/kuba2k2/.github/workflows/lint-python.yml@master
+  version:
+    name: Get version numbers
+    uses: kuba2k2/kuba2k2/.github/workflows/version.yml@master
+  gh-release:
+    name: Publish GitHub release
+    needs:
+      - version
+      - lint-python
+    uses: kuba2k2/kuba2k2/.github/workflows/gh-release.yml@master
+    permissions:
+      contents: write
+    with:
+      name: v${{ needs.version.outputs.tag }}
