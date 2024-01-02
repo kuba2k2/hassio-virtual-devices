@@ -1,16 +1,16 @@
 {
 	"domain": "virtual_devices",
 	"name": "Virtual Devices",
-	"version": "0.1.0",
 	"codeowners": [
 		"@kuba2k2"
 	],
+	"config_flow": true,
 	"documentation": "https://github.com/kuba2k2/hassio-virtual-devices",
 	"issue_tracker": "https://github.com/kuba2k2/hassio-virtual-devices/issues",
 	"integration_type": "device",
 	"iot_class": "assumed_state",
-	"config_flow": true,
 	"requirements": [
 		"python-periphery"
-	]
+	],
+	"version": "0.1.0"
 }
