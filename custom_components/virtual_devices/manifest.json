@@ -6,9 +6,9 @@
 	],
 	"config_flow": true,
 	"documentation": "https://github.com/kuba2k2/hassio-virtual-devices",
-	"issue_tracker": "https://github.com/kuba2k2/hassio-virtual-devices/issues",
 	"integration_type": "device",
 	"iot_class": "assumed_state",
+	"issue_tracker": "https://github.com/kuba2k2/hassio-virtual-devices/issues",
 	"requirements": [
 		"python-periphery"
 	],
